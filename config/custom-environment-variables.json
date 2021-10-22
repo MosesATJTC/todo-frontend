@@ -1,0 +1,10 @@
+{
+  "public": {
+    "env": "NODE_ENV",
+    "sentryDSN": "SENTRY_DSN",
+    "sentryENV": "SENTRY_ENV"
+  },
+  "www": {
+    "port": "PORT"
+  }
+}

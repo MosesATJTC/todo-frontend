@@ -1,0 +1,8 @@
+{
+  "public": {
+    "env": "NODE_ENV"
+  },
+  "www": {
+    "port": "4200"
+  }
+}

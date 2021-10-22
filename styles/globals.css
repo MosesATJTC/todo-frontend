@@ -1,0 +1,218 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.logo {
+  width: 200px;
+  height: 200px;
+}
+
+.text-error {
+  font-size: 13px;
+  color: red;
+}
+
+.container-box {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  top: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  background: #000;
+  filter: alpha(opacity=40);
+  -moz-opacity: 0.4;
+  -khtml-opacity: 0.4;
+  opacity: 0.4;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+
+p {
+  text-align: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.btn-en {
+  margin-left: 40px;
+  display: inline;
+  float: left;
+  padding-right: 20px;
+}
+
+.bg-class {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  padding-bottom: 20px;
+  display: inline flex;
+}
+
+.next-logo {
+  background-repeat: no-repeat;
+  background-image: url(/images/next-logo.png);
+  width: 250px;
+  height: 100px;
+  background-size: contain;
+  margin-left: 45%;
+  margin-top: 30px;
+  padding-bottom: 20px;
+  z-index:2;
+}
+
+.base-logo {
+  background-image: url(/images/baseweb-logo.png);
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 50px;
+  background-size: contain;
+  margin-left: 10%;
+  display: inline;
+  float: left;
+  margin-top: 10px;
+}
+
+.storybook-logo {
+  background-image: url(/images/storybook-logo.png);
+  background-repeat: no-repeat;
+  width: 150px;
+  height: 70px;
+  background-size: contain;
+  margin-left: 25%;
+  margin-top: 40px;
+  display: inline;
+  float: left;
+}
+
+.ts-logo {
+  background-image: url(/images/ts-logo.png);
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 70px;
+  background-size: contain;
+  margin-left: 10%;
+  margin-top: 40px;
+}
+
+.i18n-logo {
+  background-image: url(/images/i18n-logo.png);
+  background-repeat: no-repeat;
+  width: 140px;
+  height: 70px;
+  background-size: contain;
+  margin-left: 26%;
+  margin-top: 45px;
+}
+
+.jest-logo {
+  background-image: url(../assets/images/jest-logo.png);
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 60px;
+  background-size: contain;
+  margin-left: 45%;
+  display: inline;
+  float: left;
+}
+
+.formik-logo {
+  background-image: url(/images/formik-logo.png);
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 70px;
+  background-size: contain;
+  margin-left: 65%;
+}
+
+.eslint-logo {
+  background-image: url(/images/eslint-logo.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 70px;
+  background-size: contain;
+  margin-left: 75%;
+}
+
+.seo-logo {
+  background-image: url(/images/seo-logo.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 80px;
+  margin-top: 30px;
+  background-size: contain;
+  margin-left: 87%;
+}
+
+.sentry-logo {
+  background-image: url(/images/sentry-logo.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 60px;
+  margin-top: 0px;
+  background-size: contain;
+  margin-left: 81%;
+  display: inline;
+  float: left;
+}
+
+.head {
+  margin-left: 20%;
+  margin-top: 14%;
+  position: absolute;
+}
+
+.heading {
+  text-align: center;
+  font-size: 60px;
+  color: #000;
+  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sub-head {
+  font-size: 24px;
+  color: #090909;
+  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
+
+.abt-heading {
+  font-size: 42px;
+  margin-top: 50px;
+  position: relative;
+  color: #090909;
+  font-weight: 500;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+}
