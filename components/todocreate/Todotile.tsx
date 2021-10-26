@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState,useEffect } from "react";
 import axios from "axios";
 
 interface data {
@@ -17,6 +17,10 @@ const Todoitemtile: FC<item> = ({ title, arrayoftodo, removeelement }) => {
   const [saved, setsaved] = useState<boolean>(false)
   const [updatedtitle, setupdatedtitle] = useState<string>(title.title);
   const [afterupdation, setafterupdation] = useState<string>("")
+
+  useEffect(() => {
+    console.log("running")
+  }, [])
   const updatetitle = (): void => {
     setupdateTitle(true);
   };
@@ -25,13 +29,14 @@ const Todoitemtile: FC<item> = ({ title, arrayoftodo, removeelement }) => {
   };
   const savetitle = async(id) => {
     await axios.put(`http://localhost:4200/todo/${id}`,{title:afterupdation});
-    setcomplted(false)
+    setcomplted(prev=>!prev)
     setupdateTitle(false)
     setsaved(true)
+
   };
   const deleteitem = async (id: string) => {
     const a: data[] = arrayoftodo.filter((title) => title._id != id);
-    setcomplted(false)
+    setcomplted(prev=>!prev)
     removeelement(a);
     await axios.delete(`http://localhost:4200/todo/${id}`);
     
